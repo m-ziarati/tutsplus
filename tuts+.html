@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<style type="text/css">
+		html, body{
+			padding: 0;
+			border: 0;
+			margin: 0;
+			outline: 0;
+		}
+		/* */
+		.center{
+			width: 1290px;
+			margin: auto;	
+		}
+		/* */
+		.clearfix{
+			clear:both;
+		}
+		/* */
+		#head{
+			background-color: #333;
+			color: #ddd;
+		}
+		/* */
+		#head-left{
+			float: left;
+		}
+		/* */
+		#head-right{
+			float: right;
+		}
+		/* */
+		#head-logo{
+			width: 65px;
+			margin:10px 20px 0 0;
+		}
+		/* */
+		.head-link{
+			color: #ddd;
+			font-size: 13px;
+			display: inline-block;
+			padding: 15px 15px;
+			text-decoration: none;
+		}
+		/* */
+		.head-link:hover{
+			background-color:#666;	
+		}
+		/* */
+		#head-logo, #head-left .head-link{
+			float: left;
+		}
+		/* */
+		
+		#head-right .head-link{
+			float: right;
+		}
+		/* */
+
+		#head-right span{
+			float: right;
+			padding-top: 13px;
+		}
+		/* */
+		.button{
+			background-color:#1d9a4f;
+			padding: 5px 15px;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 3px;
+
+		}
+		/* */
+		#head-right .button{
+			float: right;
+			margin: 9px 9px 0 0; 
+		}
+		/* */
+		#slide{
+			height: 354px;
+			background-color: #f5f7f8;
+		}
+		/* */
+		#slide img{
+			height : 354px;
+			float: right;
+			margin-right: -50px;	
+		}
+		/* */
+		#slide .content{
+			float: left;
+			width: 580px;
+		}
+		/* */
+		#slide .content h1{
+			font-size: 51px;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			color: #2A3744;
+		}
+		/* */
+		#slide .content p{
+			color: #8FA6B3;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 19px;
+		}
+		/* */
+		#slide .content a{
+			text-decoration: none;
+		}
+		#home-section{
+			margin: 80px 0 20px 0;
+		}
+		#home-section #content h3{
+			color: #000;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 21px;
+			margin-bottom: 0;
+		}
+		
+		#home-section #content span{
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 19px;
+			color: #8FA6B3;
+			margin-bottom: 10px;
+
+		}
+		#home-section #content a{
+			text-decoration: none;
+			
+		}
+		
+		#gallery{
+			margin: 60px 0 100px 0;
+
+		}
+		#gallery .pic-gallery{
+			display: block;
+			width: 31.99%;
+			margin-left: 2%;
+			float: left;
+			position: relative;
+			opacity: 0.9;
+		}
+		 #gallery .pic-gallery:first-child{
+			margin-left: 0;
+
+		}
+		#gallery .pic-gallery img{
+			width: 100%;
+			
+			
+		}
+		#gallery .pic-gallery:hover{
+			opacity: 1;
+			
+		}
+		#gallery .pic-gallery i{
+			position: absolute;
+			right: 10px;
+			bottom: 80px;
+			font-size: 80px;
+			color: gray;
+			background-color: transparent;
+
+			
+		}
+		
+		
+
+		#gallery .pic-gallery a{
+			text-decoration: none;
+
+		}
+		#gallery .pic-gallery h3{
+			color: blue;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 18px;
+			margin: 0;
+
+		}
+		#gallery .pic-gallery span{
+			color: #8FA6B3;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 15px;
+			margin: 0
+
+
+		}
+
+		#titr h3{
+			color: #000;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 21px;
+
+		}
+		#titr p{
+			color: #8FA6B3;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 15px;
+
+
+
+		}
+		#pic{
+			padding: 30px 0 10px 0;
+		}
+		#pic .left-pic{
+			float: left;
+		}
+		#pic .left-pic img{
+			width: 100%;
+			height: 210px;
+
+		}
+		#pic .right-pic{
+			float: left;
+			padding-left: 30px;
+		}
+		#pic .right-pic h2{
+			color: #4E5A67;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 18px;
+		}
+		#pic .right-pic p{
+			color: #737373;
+			font-family: "Helvetica Neue",Arial,sans-serif; 
+			font-size: 14px;
+
+		}
+		#pic .right-pic a{
+			text-decoration: none;
+			font-family: "Helvetica Neue",Arial,sans-serif; 
+		}
+		/* */
+		#home-subscribe{
+			background-color: #D6EAF2;
+			height: 180px;
+		}
+		/* */
+		#home-subscribe h2{
+			text-align: center;
+			color: #2A3744;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			font-family: "Helvetica Neue",Arial,sans-serif;
+			font-size: 22px;
+		}
+		/* */
+		#home-subscribe a{
+			text-decoration: none;
+		}
+		/* */
+
+		.popular{
+			margin-top: 40px;
+		}
+		/* */
+		 .popular .titles{
+		 	padding-top: 30px;
+		 	padding-bottom: 50px;
+		}
+		/* */
+		.popular .titles a{
+			font-size: 14px;
+			float: right;
+			font-weight: bold;
+			margin: 0;
+			font-family: tahoma;
+			text-decoration: none;
+			color: blue;
+		}
+		/* */
+		.popular .titles h5{
+			font-size: 14px;
+			float: left;
+			font-weight: bold;
+			color: #8FA6B3;
+			margin: 0;
+			font-family: tahoma;
+		}
+		/* */
+		.item{
+			width: 15%;
+			margin-right: 2%;
+			float: left;
+			position: relative;
+			text-decoration: none;
+		}
+		/* */
+		.item:nth-child(6){
+			margin-right: 0;
+		}
+		/* */
+		.item img{
+			width: 100%;
+			height: 120px;
+		}
+		/* */
+		.item .content{
+			border: 1px solid #ccc;
+			border-top: 0;
+			height: 150px;
+			padding: 0 5px 5px 5px;
+		}
+		/* */
+		.item span{
+			position: absolute;
+			left: 10px;
+			bottom: 5px;
+			color: #7D7D7D;
+			font-size: 13px;
+		}
+		/* */
+		.item .overlay{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-color: rgba(0,0,0,0.2);
+			z-index: 6;
+			display: none;
+		}
+		/* */
+		.item:hover .overlay{
+			display: block;
+		}
+		/* */
+		#home-free-courses{
+			background-color: #F5F7F8;
+			height: 180px;
+			margin-top: 60px;
+		}
+		/* */
+		#home-free-courses-left{
+			float: right;
+			padding-top: 20px;
+		}
+		/* */
+		#home-free-courses-left a{
+			text-decoration: none;
+		}
+		/* */
+		#home-free-courses-right{
+			float: left;
+			padding-top: 20px;
+		}
+		/* */
+		#home-free-courses-right span {
+			color:  #2A3744;
+			font-size: 15px;
+			font-family: Arial,sans-serif;
+		}
+		/* */
+		.courses-card{
+			float: left;
+			display: block;
+			width: 31.99%;
+			margin-left: 2%;
+			background-color: #fff;
+			margin-top: 20px;
+		}
+		/* */
+		.courses-card:first-child{
+			margin-left: 0;
+		}
+		/* */
+		.courses-card:hover{
+			background-color: #EEF1F3
+		}
+		/* */
+		.courses-card img{
+			float: left;
+			width: 23%;
+			margin: 8px;
+		}
+		/* */
+		.courses-card h3{
+			float: left;
+			width: 65%;
+			color: blue;
+			margin: 0;
+			margin-top: 12px;
+			font-family:  Arial,sans-serif;
+			font-size: 14px;	
+		}
+		/* */
+		.courses-card  #flash{
+			float: left;
+			width: 8%;
+			background-color: #EEF1F3;
+			height: 82px;
+			position: relative;	
+		}
+		/* */
+		.courses-card #flash i{
+			position: absolute;
+			top: 5px;
+			right: 8px;
+			color: #00008B;
+			font-size: 48px;
+		}
+		/* */
+		#top-footer{
+			background-color: #2A3744;
+			height: 450px;
+		}
+		/* */
+		#top-footer-tuts-brand{
+			float: left;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		/* */
+		#top-footer-tuts-brand span{
+			color: #8E8E8E;
+			font-size: 14px;
+			font-family: Arial,sans-serif;
+			padding-top: -10px;
+		}
+		/* */
+		.page-footer-count-value{
+			color: white;
+			font-weight: bold;
+			margin-left: 30px;
+			float: right;
+			margin-top: 40px;
+		}
+		/* */
+		.page-footer-count-value:first-child{
+			margin-left: 0;
+		}
+		/* */
+		.page-footer-count-lable{
+			color: #8E8E8E;
+			margin-left: 10px;
+			float: right;
+			margin-top: 40px;
+		}
+		/* */
+		#top-footer-content{
+			border-top: 1px solid #8E8E8E;
+		}
+		/* */
+		#top-footer-content .context{
+			float: left;
+			margin-top: 40px;
+		}
+		/* */
+		#top-footer-content .context:nth-child(1){
+			width: 28% ;
+		}
+		/* */		
+		#top-footer-content .context:nth-child(2){
+			width: 28%;
+		}
+		/* */
+		#top-footer-content .context:nth-child(3){
+			width: 44% ;
+		}
+		/* */
+		.footer-heading{
+			color: #FFFFFF;
+			font-size: 14px;
+			font-family: Arial,sans-serif;
+			font-weight: bold;
+		}
+		/* */
+		#footer-link{
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		/* */
+		.footer-link-picture {
+			float: left;
+			width: 10%;
+			margin-right: 3%;	
+		}/* */
+		#footer-suport-item{
+			margin-top: 20px;
+		}/* */
+		#footer-suport-item a{
+			text-decoration: none;
+			color: #556678;
+			font-family: Arial,sans-serif;
+		}/* */
+		#footer-suport-item a:hover{
+			color: #A9B5C3;
+		}/* */
+		#page-footer-heading{
+			color: white;
+		    font-weight: bold;
+		    font-family: Arial,sans-serif;
+		}
+		/* */
+		#page-footer-newsletter-description{
+			color: #8e8e8e;
+    		font-family: Arial,sans-serif;
+			
+		}/* */
+		#page-footer-newsletter-email{
+		    background: #232323;
+		    border: medium none;
+		    border-radius: 4px;
+		    color: #8e8e8e;
+		    font: inherit;
+		    margin-top: 8px;
+		    margin-bottom: 6px;
+		    padding: 7px 15px;
+		    width: 72%;
+		}
+		/* */
+		#page-footer-newsletter-submit{
+			background-color: #83b348;
+		    border: medium none;
+		    border-radius: 4px;
+		    color: white;
+		    font-size: 12px;
+		    font-weight: bold;
+		    margin-bottom: 2px;
+		    padding: 9px 0;
+		    text-align: center;
+		    width: 80%;
+		    padding-bottom: 0;
+		    margin-bottom: 0;
+		}
+		/* */
+		#page-footer-newsletter-privacy-link{
+			color:  #8E8E8E;
+			font-family: Arial,sans-serif;
+			font-size: 14px;
+			text-decoration: none;
+		}
+		/* */
+		.context-image-description{
+			padding-left: 20px;
+			color: #8E8E8E;
+			font-size: 14px;
+			font font-family: : Arial,sans-serif;
+			padding-bottom: 15px;
+		}
+		/* */
+		.context-image{
+			float: left;
+		}/* */
+		.link a{
+			text-decoration: none;
+			padding-left: 20px;
+			color: #fff;
+			font-size: 14px;
+		}
+		/* */
+		.link a:hover{
+			color: #8E8E8E;
+		}
+		/* */
+		#bottom-footer{
+			background-color: #212A34;
+			height: 50px;
+			padding-top: 40px;
+		}
+		/* */
+		#page-footer-copyright{
+			float: left;
+		}
+		/* */
+		#page-footer-copyright span{
+			color: #556678;
+			font-size: 12px;
+			font-family:  Arial,sans-serif;
+			padding-top: 30px;
+			margin-left: 30px;
+		}
+		/* */
+		#page-footer-envato-logo{
+			float: right;	
+		}
+		/* */
+		#page-footer-envato-logo img{
+			width: 10%;
+			float: right;
+			margin-right: 50px;
+			margin-top: -18px;
+		}
+		/* */
+	</style>
+
+</head>
+<body>
+	<div id="head">
+		<div class="center">
+			<div id="head-left">
+				<img src="images/tuts_logo-79176000c077f4191a2cfcc3b312b7ed.svg" id="head-logo">
+				<a href="" class="head-link">free Tutorials<i class="fa fa-chevron-down"></i></a>
+				<a href="" class="head-link">courses<i class="fa fa-chevron-down"></i></a>
+				<a href="" class="head-link">eBooks<i class="fa fa-chevron-down"></i></a>
+				<a href="" class="head-link">Jobs<i class="fa fa-chevron-down"></i></a>
+				<a href="" class="head-link">Blog<i class="fa fa-chevron-down"></i></a>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<div id="head-right">
+				<a href="" class="head-link">Sign in</a>
+				<span>or</span>
+				<a href="" class="head-link">Creat Acount</a>
+				<a href="" class="button">Free Trial</a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!-- !-->
+	<div id="slide">
+		<div class="center">
+			<img src="images/header-background-2b5e9a34af340bbd226a470eb66f0c44.png">
+			<div class="content">
+				<h1>Learn Creative Skills, Shape Your Future</h1>
+				<p>Join over 5 million people using Tuts+ each month to learn skills including code, illustration, photography, web design, and more.</p>
+				<div>
+					<a href="" class="button">Free 14-day Trial</a>
+					<span>or</span>
+					<a href="">Learn more</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- !-->
+	<div id="home-section">
+		<div class="center">
+			<div id="content">
+				<h3>Video courses to build new skills from start to finish.</h3>
+				<span>Over 430 easy-to-follow video courses by expert instructors, plus dozens of new courses added each month. </span><br/>
+				<a href="">Brows all Courses <i class="fa fa-long-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="gallery">
+		<div class="center">
+			<div class="pic-gallery">
+			<a href="">
+				<img src="images/featured_CRS-200047-b5610d440e53b20ce018dbc65a35f3db.jpg"/>
+					<i class="fa fa-chevron-circle-right"></i>
+				<h3>Chrom Developer Tools</h3>
+				<span>Umar Hansa, Web Developer</span>
+
+			</a>
+			</div>
+			<div class="pic-gallery">
+			<a href="">
+				<img src="images/featured_CRS-200054-c69216b34e61d36331d391b110172427.png"/>
+				 <i class="fa fa-chevron-circle-right"></i>
+				<h3>What Every Photographer Should Know About Lenses</h3>
+				<span>David Bode, Video Production Expert</span>
+
+			</a>
+			</div>
+			<div class="pic-gallery">
+			<a href="">
+				<img src="images/featured_CRS-200073-967882b3276293b26513e2c04c1f4904.png"/>
+				 <i class="fa fa-chevron-circle-right"></i>
+				<h3>Boombproof Web Design</h3>
+				<span>Kezz Bracey,Web Designer and Front-End Developer</span>
+
+			</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="titr">
+		<div class="center">
+		<h3>Everything you need to learn creative skills from code to craft.</h3>
+		<p>A huge range of learning resources across 10 creative topics, all in one convenient place.</p>
+			
+		</div>
+	</div>
+	<!-- !-->
+	<div id="pic">
+		<div class="center">
+			<div>
+				<div class="left-pic">
+					<a href="">
+						<img src="images/learn-tutorials-064ab5ee0d33523038f04ebdb34f9e21.png" />
+					</a>
+				</div>
+				<div class="right-pic">
+					<h2>Over 18,530 Free Tutorials.</h2>
+					<p>Project-based tutorials with step-by-step instructions & screenshots. Practice your <br/> skills across 10 topics, including audio, video, craft, code, web design, illustration <br/> & more... for free!</p>
+					<a href="">Brows Tutorials<i class="fa fa-long-arrow-right"></i></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div>
+				<div class="left-pic">
+					<a href="">
+						<img src="images/learn-courses-f5adef433df8e801155b1ca435114335.png" />
+					</a>
+				</div>
+				<div class="right-pic">
+					<h2>430 Courses, and Counting!</h2>
+					<p>Learn a skill from start to finish. Typically 2 to 3 hours of video per course, each <br/> organized into chapters and bite-size lessons. Buy any course individually, or <br/> access them all via subscription.</p>
+					<a href="">Brows Courses</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div>
+				<div class="left-pic">
+					<a href="">
+						<img src="images/learn-ebooks-c888ecb3389d0eb1f857dd5a422c1c38.png" />
+					</a>
+				</div>
+				<div class="right-pic">
+					<h2>Over 180 eBooks Available.</h2>
+					<p>Subscribe for access to eBooks from great publishers, with at least 10 new eBooks <br/> each month. Download them in PDF, .epub, or .mobi format to access on most  <br/> e-readers & devices.</p>
+					<a href="">Brows eBooks</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- !-->
+	<div id="home-subscribe">
+		<h2>Committed to learning new creative skills? Subscribe to Tuts+ today</h2>
+		<div style="text-align:center">
+		<a href="" class="button">Free 14-day Trial</a>
+		<span>or</span>
+		<a href="">Learn more</a>
+		</div>
+	</div>
+	<!-- !-->
+	<div class="popular">
+		<div class="center">
+			<div class="titles">
+				<a href="">Brows all courses <i class="fa fa-arrow-right"></i></a>
+				<h5>popular courses</h5>
+				<div class="clearfix"></div>
+			</div>
+			<div class="items">
+				<a href="" class="item">
+					<img src="images/laravel4multi.png"/>
+					<div class="content">
+						<h3 class="category">CODE</h3>
+						<h3 class="name">Building Multitenant<br/>Apps in Laravel</h3>
+						<span>25 days ago . 1.5 hours<span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/uisketch.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/webappangular.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/CRS-105271.jpg"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/IntroBrackets.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/CRS-100711.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- !-->
+	<div class="popular">
+		<div class="center">
+			<div class="titles">
+				<a href="">Brows all Free Tutorials <i class="fa fa-arrow-right"></i></a>
+				<h5>Latest Tutorials<h5>
+				<div class="clearfix"></div>
+			</div>
+			<div class="items">
+				<a href="" class="item">
+					<img src="images/preview-a-2.jpg"/>
+					<div class="content">
+						<h3 class="category">CODE</h3>
+						<h3 class="name">Building Multitenant<br/>Apps in Laravel</h3>
+						<span>25 days ago . 1.5 hours<span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/preview-image@2x.jpg"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/50-filters-of-wordpress-preview.jpg"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/trust.jpg"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/negotiation-track.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<a href="" class="item">
+					<img src="images/habits_preview.png"/>
+					<div class="content">
+						<h3 class="category">code</h3>
+						<h3 class="name">php programming</h3>
+						<span>23 days</span>
+					</div>
+					<div class="overlay"></div>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="home-free-courses">
+		<div class="center">
+			<div id="home-free-courses-left">
+				<a href="">Brows all Courses <i class="fa fa-arrow-right"></i></a>
+			</div>
+			<div id="home-free-courses-right">
+				<span>Try out some of our free courses</span>
+			</div>
+			<div class="clearfix"></div>
+			<div>
+				<a href="" class="courses-card">
+					<img src="images/GmapsAPI.png" />
+					<h3>preparing WordPress Themes For<br/> ThemeFrost</h3>
+					<span ></span>
+					<div id="flash"><i class="fa fa-angle-right"></i></div>
+					<div class="clearfix"></div>	
+				</a>
+				<a href="" class="courses-card">
+					<img src="images/Digitalpainting.jpg" />
+					<h3>The Fundamental digital painting </h3>
+					<div id="flash"><i class="fa fa-angle-right"></i></div>
+					<div class="clearfix"></div>	
+				</a>
+				<a href="" class="courses-card">
+					<img src="images/CRS-48.jpg" />	
+					<h3>custom Interactive Maps Whith the Google Maps API</h3>
+					<span></span>
+					<div id="flash"><i class="fa fa-angle-right"></i></div>
+					<div class="clearfix"></div>
+				</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- !-->
+	<div id="top-footer">
+		<div class="center">
+			<div id="top-footer-tuts-brand">
+				<img src="images/tuts_logo-79176000c077f4191a2cfcc3b312b7ed.svg">
+				<span>Teaching skills to millions worldwide</span>
+			</div>
+			<div>
+				<div class="page-footer-count-lable" >Video Courses</div>
+				<div class="page-footer-count-value" >431</div>
+				<div class="page-footer-count-lable" >Toturials</div>
+				<div class="page-footer-count-value" >18.556</div>
+				<div class="clearfix"></div>
+			</div>
+			<div id="top-footer-content">
+				<div class="context">
+					<div class="footer-heading">Follow Us</div>
+					<div id="footer-link">
+						<a href="" >
+							<img src="images/facebook.png" class="footer-link-picture"/>
+						</a>
+						<a href=""  >
+							<img src="images/twitter.jpg" class="footer-link-picture"/>
+						</a>
+						<a href=""  >
+							<img src="images/google+.jpg" class="footer-link-picture" />
+						</a>
+						<a href=""  >
+							<img src="images/p.jpg" class="footer-link-picture" />
+						</a>
+						<div class="clearfix"></div>
+					</div>
+					<div class="footer-heading">Help and Support</div>
+					<div id="footer-suport-item">						
+						<a href="">FAQ</a><br/>
+						<a href="">Terms of Use</a><br/>
+						<a href="">Contact Support</a><br/>
+						<a href="">About Tuts+</a><br/>
+						<a href="">Advertise</a><br/>
+						<a href="">Teach at Tuts+</a>
+					</div>
+				</div>
+				<div class="context">
+					<span id="page-footer-heading">Email Newsletters</span><br/><br/>
+					<span id="page-footer-newsletter-description">Subscribe to receive inspiration, ideas, and<br/> news in your incontext.</span><br/>
+					<input type="text" placeholder="Email Address" id="page-footer-newsletter-email"/><br/>
+					<input type="submit" value="subscribe" id="page-footer-newsletter-submit" /><br/><br/>
+					<a href="" id="page-footer-newsletter-privacy-link">privacy Policy</a>
+				</div>
+				<div class="context">
+					<div>
+						<a href=""  class="context-image">
+							<img src="images/open-new-services-140x112-0470de5e355e703301fc99a2d13a7b0f.png"/>
+						</a>
+						<div class="context-image">
+							<div class="context-image-description">
+								<span>Custom digital services like logo design, WordPress installation, video <br/> production and more.</span>
+							</div>
+							<div class="link">
+								<a href="" >Click out Envato studio </a>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div style="margin-top:25px">
+						<a href=""  class="context-image">
+							<img src="images/wp-build-more-with-plugins-140x112-8ee6eedb12a286b2102d653b27973944.png"/>
+						</a>
+						<div class="context-image">
+							<div class="context-image-description">
+								<span >Add more features to your website such as user profiles, payment<br/> gateways,image galleries and more.</span>
+							</div>
+							<div class="link">
+								<a href="" >Click out Envato studio </a>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>
+	<!-- !-->
+	<div id="bottom-footer">
+		<div class="center">
+			<div id="page-footer-copyright">
+				<span>&copy 2014 Envato Pty Ltd. Trademarks and brands are the property of their respective owners</span>
+			</div>
+			<div id="page-footer-envato-logo">
+			<a href="" >
+				<img src="images/envato_logo-bea126b87a05d98d331259dee204aac6.svg" />
+			</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>	
+</body>
+</html>

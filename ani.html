@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+.animate
+ {
+    width:100px;
+    height:50px;
+    background:red;
+    color:white;
+    font-weight:bold;
+    position:relative;
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite; /* Safari and Chrome */
+ }
+
+ #div1 {animation-timing-function:cubic-bezier(0,0,0.25,1);}
+ #div2 {animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);}
+ #div3 {animation-timing-function:cubic-bezier(0.42,0,1,1);}
+ #div4 {animation-timing-function:cubic-bezier(0,0,0.58,1);}
+ #div5 {animation-timing-function:cubic-bezier(0.42,0,0.58,1);}
+
+ /* Safari and Chrome: */
+ #div1 {-webkit-animation-timing-function:cubic-bezier(0,0,0.25,1);}
+ #div2 {-webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);}
+ #div3 {-webkit-animation-timing-function:cubic-bezier(0.42,0,1,1);}
+ #div4 {-webkit-animation-timing-function:cubic-bezier(0,0,0.58,1);}
+ #div5 {-webkit-animation-timing-function:cubic-bezier(0.42,0,0.58,1);}
+
+ @keyframes mymove
+ {
+    from {left:0px;}
+ to {left:300px;}
+ }
+
+ @-webkit-keyframes mymove /* Safari and Chrome */
+ {
+    from {left:0px;}
+ to {left:300px;}
+ }
+         
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="animate" id="div1">linear</div>
+<div class="animate" id="div2">ease</div>
+<div class="animate" id="div3">ease-in</div>
+<div class="animate" id="div4">ease-out</div>
+<div class="animate" id="div5">ease-in-out</div>
+</body>
+</html>
